@@ -13,5 +13,6 @@ Genré: Walking Simulator, Story, Suspense
  \
 [BILD]\
 
+<img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/57fd2998-7ce7-4496-b774-4940a2e5e7a1" />
 
 
