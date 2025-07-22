@@ -1,40 +1,33 @@
-The Great Ratscapade  
-*Game Design Document*  
-*by*  
-*Emma Wigur*
+# The Great Ratscapade  
+*Game Design Document\
+Written by Emma Wigur*
+____________________________________________________________________________
 
-![][image1]
+### Introduction
 
-Introduction 										3
+### Setting
 
-Setting 											3
+### Genre and Platform
 
-Genre and Platform 	                 						4
+### Play Value and Target Audience
 
-Play Value and Target Audience						4
+### Game and Mechanics description
 
-Game and Mechanics description						4
+### Traps
 
-Traps											5
+### Bait
 
-Bait												6
+### The Farmer
 
-The Farmer										7
+### The Rat (player)
 
-The Rat (player)								          8					  
-Levels											8
+### Levels
 
-Unique Selling Points (USP)						         11
+### Unique Selling Points
 
-References and Inspiration						         11
+### References and Inspiration
 
-Moodboard									         12
-
-# 
-
-# 
-
-# 
+### Moodboard
 
 # Introduction
 
