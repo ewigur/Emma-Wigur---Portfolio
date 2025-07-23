@@ -8,7 +8,8 @@
 ________________________\
 *April 2025 - July 2025*
 
-Team Name: *Carneval*\
+Team: 3 Programmers and 4 Artists\
+Team name: *Carneval*\
 Engine: Unity\
 Genré: Walking Simulator, Story, Suspense\
 \
@@ -22,7 +23,7 @@ ___________________________________________
 ________________________\
 *November 2024 - January 2025*
 
-Team of four programmers and three artists\
+Team: 4 Programmers and 3 Artists\
 Engine: Unity\
 Genré: Platformer, Action, Local Co-op\
 \
