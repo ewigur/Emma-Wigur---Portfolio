@@ -1,7 +1,7 @@
 # Train Tale
 
 ## *3D Project - at Yrgo Game Creator*
-[Itch Page](https://yrgo-game-creator.itch.io/train-tale)
+[Itch Page](https://yrgo-game-creator.itch.io/train-tale)\
 [Trailer](https://www.youtube.com/watch?v=okvqh6uOwDE)
 
 During my second semester at Yrgo (Game Creator Programmer) I had the pleasure to work with a wonderful team of fellow students in creating this stunning piece of game.\
