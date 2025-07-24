@@ -1,3 +1,4 @@
+<a name="TOP"></a>
 # Train Tale
 
 ## *3D Project - at Yrgo Game Creator*
@@ -12,8 +13,11 @@ Working on this project, one of my personal goals was to get more comfortable wi
 
 ## A Selection of Contributions
 ### Events
-1. Following eyes\
-![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Following_Eyes.gif)
+
+**1. Following eyes**
+
+
+![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Following_Eyes_01.gif)
 
 <details>
 <summary>Show Following_Eyes.cs</summary>
@@ -84,3 +88,6 @@ Working on this project, one of my personal goals was to get more comfortable wi
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
 
 It was challenging, but most of all it was fun - and I really hit the jackpot when I signed up to work with this team of aspiring game devs!
+
+[RETURN TO TOP](#TOP)
+             <a name="TOP"></a>  
