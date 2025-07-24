@@ -1,7 +1,7 @@
 ## A Collection of projects I've had the privilege to work on
 *Read more about my contributions on each individual project by clicking their respective names below*
 
-# Train Tale
+# [Train Tale](https://github.com/ewigur/Portfolio/tree/main/Train%20Tale)
  - Comprehensive Gameplay Programming
  - Sound Design/SFX
  - Animation Implementation\
