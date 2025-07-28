@@ -22,74 +22,10 @@ The first sinister encounter in the game are a pair of eyes behind following the
 
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Following_Eyes_01.gif)
 
-<details>
-<summary>Show Following_Eyes.cs</summary>
-<br>
-
-```ruby
-{
-
-    public GameObject[] eyeBalls;
-
-    [SerializeField]
-    private GameObject player;
-
-    [SerializeField] private float maxDistance = 5f;
-    [SerializeField] private float minDistance = -5f;
-    private float rotationTime = 1f;
-    private Vector3 playerPos;
-    private Quaternion startRotation;
-
-    private void Start()
-    {
-        startRotation = transform.rotation;
-    }
-
-    void Update()
-    {
-        if (!FindAnyObjectByType<CheckForObstacle>().IsPlayerHiding())
-        {
-            CalculateRotation();
-        }
-    }
-
-    private void CalculateRotation()
-    {
-        foreach (GameObject eyeball in eyeBalls)
-        {
-            playerPos = player.transform.position;
-            Vector3 distance = transform.position - playerPos;
-            Quaternion resetRotation = Quaternion.Euler(0, 0, 0);
-            Quaternion lookRotation = Quaternion.LookRotation((playerPos - eyeball.transform.position).normalized);
-
-            if (distance.x < maxDistance && distance.x! > minDistance ||
-                distance.x > minDistance && distance.x! < maxDistance)
-            {
-                eyeball.transform.rotation = Quaternion.Slerp(eyeball.transform.rotation,
-                lookRotation, rotationTime * Time.deltaTime);
-            }
-
-            else
-            {
-                eyeball.transform.rotation = Quaternion.Slerp(eyeball.transform.rotation,
-                resetRotation, rotationTime * 0.5f * Time.deltaTime);
-            }
-        }
-    }
-
-    public void GetStartRotation()
-    {
-        eyeBalls[0].transform.rotation = Quaternion.Slerp(transform.rotation,
-                startRotation, rotationTime * Time.deltaTime);
-    }
-}
-```
-</details>
+_____________________________________________________________________________________
 
 **1. Nail Jump Sequence**\
-The game relies on an interaction system to progress with the story. Most of the interactions triggers a cutscene that takes the player from A to B. The "Nail Jump" is one of them, and initially I coded this to be an interaction where you press the interact button for each individual nail the player could jump on. It was a lot of tweaking, and hairpulling to get the snap points to match with the jumping animation. We finally decided on making the nail jump into a single interaction, and it resulted in a smooth transition between the two levels.\
- \
- *I created the foundation of the nail jump, as well as the positioning of the nails and landing points.*
+The game relies on an interaction system to progress with the story. Most of the interactions triggers a cutscene that takes the player from A to B. The "Nail Jump" is one of them, and initially I coded this to be an interaction where you press the interact button for each individual nail the player could jump on. It was a lot of tweaking, and hairpulling to get the snap points to match with the jumping animation. We finally decided on making the nail jump into a single interaction, and it resulted in a smooth transition between the two levels.
 
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Nail_Jump_01.gif)
 
