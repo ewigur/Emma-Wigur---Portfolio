@@ -7,6 +7,13 @@ Our vision while building this game was to make the characters easy to adore, as
 ## 
 [Itch Page](https://yrgo-game-creator.itch.io/train-tale)\
 [Trailer](https://www.youtube.com/watch?v=okvqh6uOwDE)
+## 
+
+### *Developed by*
+![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
+
+*I had the pleasure to work with a wonderful team of fellow students in creating this stunning piece of game.\
+It was challenging, but most of all it was fun - and I really hit the jackpot when I signed up to work with **Carneval**, a team of aspiring game devs!*
 
  \
 *8 week 3D Project - at Yrgo Game Creator*\
@@ -49,11 +56,7 @@ ________________________________________________________________________________
 
 
 
-### *Developed by*
-![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
 
-I had the pleasure to work with a wonderful team of fellow students in creating this stunning piece of game.\
-It was challenging, but most of all it was fun - and I really hit the jackpot when I signed up to work with *Carneval*, a team of aspiring game devs!
 
 [RETURN TO TOP](#TOP)
              <a name="TOP"></a>  
