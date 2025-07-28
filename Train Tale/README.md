@@ -8,7 +8,6 @@ Our vision while building this game was to make the characters easy to adore, as
 [Itch Page](https://yrgo-game-creator.itch.io/train-tale)\
 [Trailer](https://www.youtube.com/watch?v=okvqh6uOwDE)
 
-During my second semester at Yrgo (Game Creator Programmer) 
  \
 *8 week 3D Project - at Yrgo Game Creator*\
 *Developed in Spring/Summer of 2025*
@@ -18,8 +17,8 @@ ________________________________________________________________________________
 ## A Selection of Contributions
 ### Events
 
-**1. Following eyes & **
-The first 
+**1. Following eyes**\
+The first sinister encounter in the game are a pair of eyes behind following the player's movement. I coded the eyes to track the player based on their position/distance. Since the player has restricted movement on the trolley, it slows down to really capture the eerie stare of the stalking eyes.
 
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Following_Eyes_01.gif)
 
