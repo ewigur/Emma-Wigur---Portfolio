@@ -86,6 +86,12 @@ The first sinister encounter in the game are a pair of eyes behind following the
 ```
 </details>
 
+**1. Nail Jump Sequence**\
+The game relies on an interaction system to progress with the story. Most of the interactions triggers a cutscene that takes the player from A to B. The "Nail Jump" is one of them, and initially I coded this to be an interaction where you press the interact button for each individual nail the player could jump on. It was a lot of tweaking, and hairpulling to get the snap points to match with the jumping animation. We finally decided on making the nail jump into a single interaction, and it resulted in a smooth transition between the two levels.\
+ \
+ *I created the foundation of the nail jump, as well as the positioning of the nails and landing points.*
+
+![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Nail_Jump_01.gif)
 
 ### *Developed by*
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
