@@ -24,10 +24,30 @@ The first sinister encounter in the game are a pair of eyes behind following the
 
 _____________________________________________________________________________________
 
-**1. Nail Jump Sequence**\
+**2. Nail Jump Sequence**\
 The game relies on an interaction system to progress with the story. Most of the interactions triggers a cutscene that takes the player from A to B. The "Nail Jump" is one of them, and initially I coded this to be an interaction where you press the interact button for each individual nail the player could jump on. It was a lot of tweaking, and hairpulling to get the snap points to match with the jumping animation. We finally decided on making the nail jump into a single interaction, and it resulted in a smooth transition between the two levels.
 
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Nail_Jump_01.gif)
+
+_____________________________________________________________________________________
+
+**3. Player Moving**\
+A character and story driven game is nothing without smooth navigation. We went back and foth many times to figure out the best type of movement in our game. It started with a blend between a type of locked (rail like) movement/free movement, but we thankfully decided that free movement was the best for our game - we could create no go zones in other ways without making the player suffer from only being able to move left/right between cutscenes.
+
+My work with movement was:
+- overall coding the movement system with the other programmers in the team
+- creating and implementing footstep sound - using animation events
+- implementing and tweaking walk/stop with animations
+- creating action maps
+- Collisions
+
+![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/PlayerWalk_01.gif)
+
+_____________________________________________________________________________________
+
+**4. Sound Design**\
+
+
 
 ### *Developed by*
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
