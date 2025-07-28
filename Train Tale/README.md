@@ -54,11 +54,6 @@ ________________________________________________________________________________
 
 **4. Sound Design**
 
-[Player Walk](https://gabalpha.github.io/read-audio/?p=<[audio_url](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/Audio/FootStep_1.ogg)>)
-
-
-
-
 
 [RETURN TO TOP](#TOP)
              <a name="TOP"></a>  
