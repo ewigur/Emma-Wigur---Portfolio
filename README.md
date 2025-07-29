@@ -32,7 +32,7 @@ Genre: Platformer, Action, Local Co-op\
 ________________________________________
 
 ## Disclaimer:
-All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist\
+All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
 _Their names are listed on the Itch.io pages provided in each presentation of the projects._
 
 [RETURN TO TOP](#TOP)
