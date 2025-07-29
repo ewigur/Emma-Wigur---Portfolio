@@ -1,78 +1,71 @@
 <a name="TOP"></a>
 
-![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Sample_01.gif)
+![PogoLogo](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/Img/pogologo.png)
 
 
-# Brief Game Summary and Vision
-Train Tale is a cozy, yet suspenseful 3D sidescroller where you play as a little gnomelike creature who lives among traveling human passengers on a train.\
- \
-Our vision while building this game was to create characters that are easy to adore, as well as make an impactful impression on the player as the story unfolds.
+# Game Overview
+Pogo Pirates is all about being the King of the hill. Eliminate your friends (or enemies) with your mighty pogo stick; the perfect party game for couch hangouts!
 
 ## 
-[Itch Page](https://yrgo-game-creator.itch.io/train-tale)\
-[Trailer](https://www.youtube.com/watch?v=okvqh6uOwDE)
+[Itch Page](https://yrgo-game-creator.itch.io/pogopirates)\
+[Trailer](https://www.youtube.com/watch?v=AxzvmTWsCbA)
 ## 
 
-
-
-*I had the pleasure to work with a wonderful team of fellow students in creating this stunning piece of game.\
-It was challenging, but most of all it was fun - and I really hit the jackpot when I signed up to work with **Carneval**, a team of aspiring game devs!*
-
  \
-*8 week 3D Project - at Yrgo Game Creator*\
-*Developed in Spring/Summer of 2025*
+*8 week 2D Project - at Yrgo Game Creator*\
+*Developed Winter of 2024/2025*
 _____________________________________________________________________________________
-*Working on this project, one of my personal goals was to get more comfortable with taking a step back and make sure I could read and understand my own code. One of my teachers gave me a valuable tip that I will take with me wherever I go - bring out the old trusty pen and paper and write down the steps I needed to take to get where I wanted. Looking back I can tap myself on the shoulder and say that I reached that goal, and I learned so much more in the process.*
+*This project was the starting point of getting comfortable with building games, as well as working in a*\
+*team. The latter wasn't hard, since every single one in the team really kept on encouraging and supporting eachother*\
+*which also made the first point not as intimidating as the time went along.*\
+ \
+*This was the first game I had ever been working on, and I couldn't be more proud of how it turned out*
 
 ## A Selection of Contributions
 
-**1. Following eyes**\
-The first sinister encounter in the game are a pair of eyes following the player's movement. I coded the eyes to track the player based on their position/distance. Since the player has restricted movement on the trolley, it slows down to really capture the eerie stare of the stalking eyes.
+**1. Camera**\
+The camera system is based on fast paced action PvP games like *"Super Smash Bros"*. The camera keeps track of how many players are currently in the game, and adjusts a bounding box accordingly. The camera itself moves only on the X-axis, and zooms to get the feeling of depth. A dynamic camera was important to get the right feel of the game, and it was a good experience to keep that as my main focus.
 
-![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Following_Eyes_01.gif)
-
-_____________________________________________________________________________________
-
-**2. Nail Jump Sequence**\
-The game relies on an interaction system to progress with the story. Most of the interactions triggers a cutscene that takes the player from A to B. The "Nail Jump" is one of them; initially I coded this to be an interaction where you press the interact button for each individual nail the player could jump on. It was a lot of tweaking, and hairpulling to get the snap points to match with the jumping animation. We finally decided on making the nail jump into a single interaction, and it resulted in a smooth transition between the two levels.
-
-![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Nail_Jump_01.gif)
+![Camera](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/GIFs/CamShow.gif)
 
 _____________________________________________________________________________________
 
-**3. Player Moving**\
-A character and story driven game is nothing without smooth navigation. We went back and foth many times to figure out the best type of movement in our game. It started with a blend between a type of locked (rail like) movement and free movement, but we (thankfully) decided that free movement was the best for our game - we could create no go zones in other ways without making the player suffer from only being able to move left/right between cutscenes.
+**2. In game UI**\
+Players don't have a health bar, instead the hit percentage goes up as players hit one another.\
+I worked with the hit progression UI, and added:
+- Color lerp and animation on numbers when numbers change
+- Plank shake animation
 
-**My work with movement included:**
-- Overall coding the movement system with the other programmers in the team
-- Creating and implementing footstep sound - using animation events
-- Implementing and tweaking walk/stop with animations
-- Creating input action maps
-- Collisions
+An arrow shows up to indicate where a player is when they go outside of the camera bounds.\
+My work on this was:
+- Create an indicator based on the characters main color
+- Implement a system that tracks if the player is outside of camera bounds that would trigger the indicator
 
-![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/PlayerWalk_01.gif)
+| Hit Percent  | Indicator |
+| ------------- | ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/GIFs/UIShake.gif)  | ![](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/GIFs/Indicator.gif) |
+
 
 _____________________________________________________________________________________
 
-**4. Sound Design**
+**3. UI**\
+The main animations for the menu and tutorial is made by one of the artists on the project, my contributions were:\
+ \
+**Animation**
+- Button shakes in menues
+- Show/Hide tutorial side panels
 
-I chose to take on the sound design. A big task that really gave me more respect for how intricate sound in games are - as well as the importance of it.
+ \
+**Programming**
+- Menu behaviours
+- Tutorial panel behaviours
 
+| Menu  | Tutorial |
+| ------------- | ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/GIFs/UI_1.gif)  | ![](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/GIFs/UI_2.gif) |
 
-- *Apart from two SFX audio ("Dying Hand" and "Dead Eye Awakens"), all SFX are recorded by me*
-- *All SFX and Ambience are mixed by me*
-- *Tools: Audacity and Adobe Audition*
-
- In addition to dusting off old skills in recording, I worked on:
-- Mixing audio based on game object material, size and surroundings
-- Matching audio with animation using event-based triggers
-- Creating systems to implementing audio in the game
-- Spacial audio based on direction and distance
 _____________________________________________________________________________________
-### *Developed by*
-![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
-_____________________________________________________________________________________
-### *Made possible by*
+### *Game created at*
 ![Image](https://github.com/ewigur/Portfolio/blob/main/ThumbNails/Yrgo.png)
 *Higher Vocational Education - Game Creator Programmer, Göteborg*
 _____________________________________________________________________________________
