@@ -6,7 +6,7 @@
 # Brief Game Summary and Vision
 Train Tale is a cozy, yet suspenseful 3D sidescroller where you play as a little gnomelike creature who lives among traveling human passengers on a train.\
  \
-Our vision while building this game was to make the characters easy to adore, as well as stir up various feelings on the spectrum as the story unfolds.
+Our vision while building this game was to create characters that are easy to adore, as well as make an impactful impression on the player as the story unfolds.
 
 ## 
 [Itch Page](https://yrgo-game-creator.itch.io/train-tale)\
