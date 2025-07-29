@@ -13,7 +13,7 @@ Pogo Pirates is all about being the King of the hill. Eliminate your friends (or
 
  \
 *8 week 2D Project - at Yrgo Game Creator*\
-*Developed Winter of 2024/2025*
+*Developed November 2024 - January 2025*
 _____________________________________________________________________________________
 *This project was the starting point of getting comfortable with building games, as well as working in a*\
 *team. The latter wasn't hard, since every single one in the team really kept on encouraging and supporting eachother*\
