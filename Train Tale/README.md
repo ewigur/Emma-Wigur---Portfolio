@@ -26,7 +26,7 @@ ________________________________________________________________________________
 
 ## A Selection of Contributions
 
-**1. Following eyes**\
+**1. Following Eyes**\
 The first sinister encounter in the game are a pair of eyes following the player's movement. I coded the eyes to track the player based on their position/distance. Since the player has restricted movement on the trolley, it slows down to really capture the eerie stare of the stalking eyes.
 
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Following_Eyes_01.gif)
@@ -72,7 +72,7 @@ ________________________________________________________________________________
 ### *Developed by*
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
 _____________________________________________________________________________________
-### *Made possible by*
+### *Made Possible by*
 ![Image](https://github.com/ewigur/Portfolio/blob/main/ThumbNails/Yrgo.png)
 *Higher Vocational Education - Game Creator Programmer, Göteborg*
 _____________________________________________________________________________________
