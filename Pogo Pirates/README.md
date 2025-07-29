@@ -65,7 +65,7 @@ The main animations for the menu and tutorial is made by one of the artists on t
 | ![](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/GIFs/UI_1.gif)  | ![](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/GIFs/UI_2.gif) |
 
 _____________________________________________________________________________________
-### *Game created at*
+### *Game Created At*
 ![Image](https://github.com/ewigur/Portfolio/blob/main/ThumbNails/Yrgo.png)
 *Higher Vocational Education - Game Creator Programmer, Göteborg*
 _____________________________________________________________________________________
