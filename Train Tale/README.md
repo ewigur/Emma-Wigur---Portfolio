@@ -55,9 +55,25 @@ A character and story driven game is nothing without smooth navigation. We went 
 _____________________________________________________________________________________
 
 **4. Sound Design**
+
+I chose to take on the sound design - a big task that really gave me more respect for how intricate sound in games are, as well as the importance of it.
+
+**Apart from two SFX audio ("Dying Hand" and "Dead Eye Awakens"), all SFX are recorded by me.\
+All SFX and Ambience are mixed by me, using Audacity (and later Adobe Audition).**\
+ \
+ In addition to dusting off old skills in recording, I worked on:
+- Mixing audio based on game object material, size and surroundings
+- Matching audio with animation using event-based triggers
+- Creating systems to implementing audio in the game
+- Spacial audio based on direction and distance
 _____________________________________________________________________________________
 ### *Developed by*
 ![](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/GIFs/Carneval.gif)
+_____________________________________________________________________________________
+### *Made possible by*
+![Image](https://github.com/ewigur/Portfolio/blob/main/ThumbNails/Yrgo.png)
+*Higher Vocational Education - Game Creator Programmer, Göteborg*
+_____________________________________________________________________________________
 
 [RETURN TO TOP](#TOP)
              <a name="TOP"></a>  
