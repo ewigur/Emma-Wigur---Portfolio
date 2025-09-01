@@ -1,7 +1,11 @@
 <a name="TOP"></a>
 
-## A Collection of projects I've had the privilege to work on
+# A Collection of projects I've had the privilege to work on
 *Read more about my contributions on each individual project by clicking their respective names below*
+
+### Disclaimer:
+All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
+_Their names are listed on the Itch.io pages provided in each presentation of the projects._
 ___________________________________________________________________
 # [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md)
  - Comprehensive Gameplay Programming
@@ -31,9 +35,7 @@ Genre: Platformer, Action, Local Co-op\
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/57fd2998-7ce7-4496-b774-4940a2e5e7a1" />
 ________________________________________
 
-## Disclaimer:
-All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
-_Their names are listed on the Itch.io pages provided in each presentation of the projects._
+
 
 [RETURN TO TOP](#TOP)
              <a name="TOP"></a>  
