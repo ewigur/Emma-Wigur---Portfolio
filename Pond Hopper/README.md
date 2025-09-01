@@ -12,9 +12,8 @@ SomeText
 [Itch Page](https://ewigur.itch.io/pond-hopper)
 ## 
 
-
- \
-*SomeText - Dev time*
+ 2D game for mobile\
+*January 2025 - February 2025*
 _____________________________________________________________________________________
 
 ## SomeText - Mechanics
