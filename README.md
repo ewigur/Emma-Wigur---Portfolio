@@ -1,9 +1,9 @@
 <a name="TOP"></a>
 
-## A Collection of projects I've had the privilege to work on
+# A Collection of projects I've had the privilege to work on
 *Read more about my contributions on each individual project by clicking their respective names below*
 
-## Disclaimer:
+### Disclaimer:
 All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
 _Their names are listed on the Itch.io pages provided in each presentation of the projects._
 ___________________________________________________________________
