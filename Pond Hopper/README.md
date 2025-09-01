@@ -9,7 +9,7 @@
 SomeText
 
 ## 
-[Itch Page](https://ewigur.itch.io/pond-hopper)\
+[Itch Page](https://ewigur.itch.io/pond-hopper)
 ## 
 
 
