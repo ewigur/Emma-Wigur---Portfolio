@@ -69,10 +69,10 @@ I was really proud of this nifty little menu feature. I spent a lot of time find
 
 _____________________________________________________________________________________
 
-**5. Graphics**
+## Graphics
 
 _____________________________________________________________________________________
-**6. Code blocks, *for the curious***
+## Code blocks, *for the curious*
 
 <details>
 <summary>PickUpItem.cs - Scriptable Object</summary>
