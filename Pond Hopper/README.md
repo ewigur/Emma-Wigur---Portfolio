@@ -79,7 +79,9 @@ ________________________________________________________________________________
 <br>
   
 ```ruby
-using UnityEngine;
+/*NOTE: This is the item data container for the pickups (flies).
+In addition to defining what kind of item this is, this is also used
+by the object pool to calculate which of the two pickup items to choose  - based on spawnProbability*/
 
 [CreateAssetMenu(fileName = "PickUp", menuName = "ScriptableObjects/PickUp Item", order = 1)]
 public class PickUpItem : ScriptableObject
@@ -105,66 +107,43 @@ public class PickUpItem : ScriptableObject
 <br>
   
 ```ruby
-using Random = UnityEngine.Random;
-using System.Collections.Generic;
-using UnityEngine.Pool;
-using UnityEngine;
-using System.Linq;
 
-public class PickUpPool : MonoBehaviour
-{
-    [SerializeField] private List<PickUpItem> pickUpItems;
-    [SerializeField] private int defaultCapacity = 5;
-    [SerializeField] private int maxActivePickUps = 10;
-    [SerializeField] private float timeBetweenSpawns = 0.2f;
-    [SerializeField] private float startSpawnTime = 0.2f;
+/*
+  NOTE: A snippet from the object pool.
+        I used Unity's built in OP, and it takes information from the behavioural script created for the flies/fireflies,
+        which in turn is based off of the scriptable object that contains all the data.
+*/
 
-    [SerializeField] private float minX = -7f;
-    [SerializeField] private float maxX = 7f;
-    [SerializeField] private float minY = 2f;
-    [SerializeField] private float maxY = 4f;
 
-    private int currentActivePickUps;
-    
-    private Dictionary<PickUpItem, ObjectPool<PickUpBehaviour>> pickUpPools;
+/*
+  NOTE: The pool takes the "spawnProbability" (from the scriptable object) into account,
+        and releases a set amount of flies based on weight and amount of flies already excisting in the scene.
+*/
+________________________
 
-    private void Start()
+/*
+  Snippet 1  - Getting item data
+*/
+
+    private PickUpItem GetRandomPickUpItem()
     {
-        pickUpPools = new Dictionary<PickUpItem, ObjectPool<PickUpBehaviour>>();
-        InitializePickUpPools();
-        InvokeRepeating(nameof(Spawn), startSpawnTime, timeBetweenSpawns);
-    }
+        float totalWeight = pickUpItems.Sum(item => item.spawnProbability);
+        float randomValue = Random.Range(0f, totalWeight);
+        float cumulativeWeight = 0f;
 
-    private void InitializePickUpPools()
-    {
         foreach (var item in pickUpItems)
         {
-            pickUpPools[item] = CreatePoolForItem(item);
-            
-            for (int i = 0; i < defaultCapacity; i++)
-            {
-                var pickUp = pickUpPools[item].Get();
-                pickUpPools[item].Release(pickUp);
-            }
+            cumulativeWeight += item.spawnProbability;
+            if (randomValue <= cumulativeWeight)
+                return item;
         }
-    }
 
-    private ObjectPool<PickUpBehaviour> CreatePoolForItem(PickUpItem item)
-    {
-        return new ObjectPool<PickUpBehaviour>
-        (
-            createFunc: () =>
-            {
-                var instance = Instantiate(item.prefab).GetComponent<PickUpBehaviour>();
-                instance.gameObject.SetActive(false);
-                return instance;
-            },
-            actionOnGet: pickUp => pickUp.gameObject.SetActive(true),
-            actionOnRelease: pickUp => pickUp.gameObject.SetActive(false),
-            actionOnDestroy: pickUp => Destroy(pickUp.gameObject),
-            collectionCheck: false, defaultCapacity, maxActivePickUps
-        );
+        return pickUpItems[0];
     }
+________________________
+/*
+  Snippet 2  - Spawn Method
+*/
 
     private void Spawn()
     {
@@ -182,33 +161,12 @@ public class PickUpPool : MonoBehaviour
             pickUp.Initialize(randomPickUpItem);
             pickUp.OnReturn += DisablePrefab;
         }
-        
     }
-    
-    private Vector2 GetRandomSpawnPosition()
-    {
-        float randomX = Random.Range(minX, maxX);
-        float randomY = Random.Range(minY, maxY);
-        Vector2 spawnPosition = new Vector2(randomX, randomY);
-        
-        return spawnPosition;
-    }
+________________________
 
-    private PickUpItem GetRandomPickUpItem()
-    {
-        float totalWeight = pickUpItems.Sum(item => item.spawnProbability);
-        float randomValue = Random.Range(0f, totalWeight);
-        float cumulativeWeight = 0f;
-
-        foreach (var item in pickUpItems)
-        {
-            cumulativeWeight += item.spawnProbability;
-            if (randomValue <= cumulativeWeight)
-                return item;
-        }
-
-        return pickUpItems[0];
-    }
+/*
+  Snippet 3  - Return item to pool
+*/
 
     private void DisablePrefab(PickUpBehaviour pickUp)
     {
@@ -221,7 +179,6 @@ public class PickUpPool : MonoBehaviour
     }
 }
 
-
 ```
 
 </details>
@@ -231,57 +188,14 @@ public class PickUpPool : MonoBehaviour
 <br>
   
 ```ruby
-using System;
-using UnityEngine;
+/*
+  NOTE: This is a snippet of what happens under the hood as the game changes states.
+        I created enums for each state
+        and additionaly to handling states the game manager directly keeps track of the
+        PlayerPrefs and the changes in music.
+*/
 
-public class GameManager : MonoBehaviour
-{
-    public static GameManager GMInstance;
-    
-    public static Action<GameStates> onGameStateChanged;
-    public static Action<bool> onToggleInput;
-    public static Action TriggerMenuMusic;
-    public static Action TriggerGameMusic;
-    public static Action TriggerPauseMusic;
-    public static Action TriggerResumeMusic;
-    
-    
-    public enum GameStates
-    {
-        MainMenu,
-        GameLoop,
-        GamePaused,
-        GameResumed,
-        GameRestarted,
-        GameOver,
-    }
-
-    public GameStates state;
-    private void Awake()
-    {
-        if (GMInstance != null)
-        {
-            Destroy(gameObject);
-        }
-
-        else
-        {
-            GMInstance = this;
-            DontDestroyOnLoad(gameObject);
-            ChangeState(GameStates.MainMenu);
-        }
-    }
-
-    public void ChangeState(GameStates newState)
-    {
-        if(state == newState)
-            return;
-
-        state = newState;
-        onGameStateChanged?.Invoke(state);
-        HandleStates(newState);
-    }
-
+----
     private void HandleStates(GameStates newState)
     {
         switch (newState)
@@ -323,7 +237,11 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-    
+
+/*
+  NOTE: The Game Manager resets everything as soon as you close the app.
+*/
+      
     public void OnApplicationQuit()
     {
         #if UNITY_EDITOR
@@ -335,8 +253,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.DeleteKey("MusicVolume");
         PlayerPrefs.DeleteKey("remainingLives");
         PlayerPrefs.DeleteKey("currentScore");
-        
-        Debug.Log("Keys restored");
         
         Application.Quit();
     }
