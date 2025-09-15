@@ -35,7 +35,19 @@ Genre: Platformer, Action, Local Co-op\
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/57fd2998-7ce7-4496-b774-4940a2e5e7a1" />
 ________________________________________
 
+# Projects by me
 
+
+# [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md)
+- Game Development for Android\
+- Programming Patterns\
+- 2D art and Animation\
+________________________\
+*Developed: January 2025 - February 2025*
+
+Engine: Unity\
+\
+<img width="315" height="250" alt="image" src="https://github.com/ewigur/Portfolio/blob/main/ThumbNails/PH.png" />
 
 [RETURN TO TOP](#TOP)
              <a name="TOP"></a>  
