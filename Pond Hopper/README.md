@@ -71,6 +71,24 @@ ________________________________________________________________________________
 
 ## Graphics
 
+All graphics are created by me.\
+The only exception is the level background,\
+which is an AI-generated image (Adobe Firefly) that I repainted and cut into three different pieces to layer the game scene.
+
+| Fly  | Firefly |
+| ------------- | ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/Fly.gif)  | ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/FireFly.gif) |
+
+| Level  | Frog |
+| ------------- | ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/Level.gif)  |  ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/PH_Frog.gif) |
+
+| Platforms | 
+| ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/PH_Log_Stone.png) |
+
+
+
 _____________________________________________________________________________________
 ## Code blocks, *for the curious*
 
