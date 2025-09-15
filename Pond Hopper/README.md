@@ -110,7 +110,7 @@ public class PickUpItem : ScriptableObject
 
 /*
   NOTE: A snippet from the object pool.
-        I used Unity's built in OP, and it takes information from the behavioural script created for the flies/fireflies,
+        I used Unity's built in OP, and it takes information from the behavioural script created for the flies,
         which in turn is based off of the scriptable object that contains all the data.
 */
 
