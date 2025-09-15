@@ -7,7 +7,7 @@
 All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
 _Their names are listed on the Itch.io pages provided in each presentation of the projects._
 ___________________________________________________________________
-# [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md)
+## [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md)
  - Comprehensive Gameplay Programming
  - Sound Design/SFX
  - Animation Implementation\
@@ -22,7 +22,7 @@ Genre: Walking Simulator, Story, Suspense\
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/6da9ffc9-b982-4ffa-be03-1cc46e4982a5" />
 ___________________________________________
 
-# [Pogo Pirates](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md)
+## [Pogo Pirates](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md)
 - Camera System
 - UI Implementation/Animation\
 ________________________\
@@ -38,9 +38,9 @@ ________________________________________
 # Projects by me
 
 
-# [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md)
-- Game Development for Android\
-- Programming Patterns\
+## [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md)
+- Game Development for Android
+- Programming Patterns
 - 2D art and Animation\
 ________________________\
 *Developed: January 2025 - February 2025*
