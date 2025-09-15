@@ -184,51 +184,35 @@ ________________________
 </details>
 
 <details>
-<summary>GameManager.cs - Game State Machine</summary>
+<summary>State Machine</summary>
 <br>
   
 ```ruby
 /*
   NOTE: This is a snippet of what happens under the hood as the game changes states.
         I created enums for each state
-        and additionaly to handling states the game manager directly keeps track of the
-        PlayerPrefs and the changes in music.
+*/
+      public enum GameStates
+    {
+        MainMenu,
+        GameLoop,
+        GamePaused,
+        GameResumed,
+        GameRestarted,
+        GameOver,
+    }
+
+________________________
+
+*/
+    NOTE: As soon as the game state changes, the corresponding components listens to that.
+          Below is a snippet from under the hood upon player death...
 */
 
-----
     private void HandleStates(GameStates newState)
     {
         switch (newState)
         {
-            case GameStates.MainMenu:
-                TriggerMenuMusic?.Invoke();
-                Time.timeScale = 1;
-                break;
-            
-            case GameStates.GameLoop:
-                onToggleInput?.Invoke(true);
-                PlayerPrefs.SetInt("currentScore", 0);
-                TriggerGameMusic?.Invoke();
-                Time.timeScale = 1f;
-                break;
-            
-            case GameStates.GamePaused:
-                onToggleInput?.Invoke(false);
-                TriggerPauseMusic?.Invoke();
-                Time.timeScale = 0f;
-                break;
-            
-            case GameStates.GameResumed:
-                onToggleInput?.Invoke(true);
-                TriggerResumeMusic?.Invoke();
-                Time.timeScale = 1f;
-                break;
-            
-            case GameStates.GameRestarted:
-                onToggleInput?.Invoke(true);
-                TriggerResumeMusic?.Invoke();
-                Time.timeScale = 1f;
-                break;
             
             case GameStates.GameOver:
                 onToggleInput?.Invoke(false);
@@ -238,26 +222,24 @@ ________________________
         }
     }
 
+________________________
+
 /*
-  NOTE: The Game Manager resets everything as soon as you close the app.
+    NOTE: ...and a bunch of happens in correlation with the state change.
+             (UI managingin, this case.)
 */
-      
-    public void OnApplicationQuit()
+
+(from "InGameStatesHandler")
+
+{
+    private void GameOver()
     {
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-        
-        PlayerPrefs.DeleteKey("SFXVolume");
-        PlayerPrefs.DeleteKey("ButtonsVolume");
-        PlayerPrefs.DeleteKey("MusicVolume");
-        PlayerPrefs.DeleteKey("remainingLives");
-        PlayerPrefs.DeleteKey("currentScore");
-        
-        Application.Quit();
+        GMInstance.ChangeState(GameStates.GameOver);
+        livesDisplay.SetActive(false);
+        pauseButton.SetActive(false);
+        gameOverMenu.SetActive(true);
     }
 }
-
 
 ```
 
