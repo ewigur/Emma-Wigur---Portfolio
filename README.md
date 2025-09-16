@@ -4,6 +4,8 @@
 **Links**\
 [Itch.io](https://ewigur.itch.io/)
 
+[CV]()
+
 
 ## Collaborative projects
 *Read more about my contributions on each individual project by clicking their respective names below*
