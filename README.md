@@ -2,7 +2,7 @@
 
 # Portfolio | Emma Wigur
 **Links**\
-[CV](https://github.com/ewigur/Emma-Wigur---Portfolio/blob/main/CV/CV_EmmaWigur.pdf) |
+[CV](https://drive.google.com/file/d/1TDsZZmJ3MFa_2KRa7qVxOIB03esl3rUD/view) |
 [Itch.io](https://ewigur.itch.io/) |
 [LinkedIn](https://www.linkedin.com/in/emma-wigur-103711219/)
  
