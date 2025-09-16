@@ -41,9 +41,9 @@ diving into the cloud of common flies that might even give them a higher score.
 *[Code can be found further down the page]*
 _____________________________________________________________________________________
 
-**2. Object Pool**
-
 ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/PH_ObjectPool.gif)
+
+**2. Object Pool**
 
 Since were already on the topic of the flies - they also have their very own object pool. Since the gameloop goes on and on, 
 it would be irresposible of me not to implement a _circle of life_ kind of functionality. The flies spawn from a pool of preloaded
@@ -52,18 +52,18 @@ prefabs, and when the player collects them they return to the pool to be release
 *[Code can be found further down the page]*
 _____________________________________________________________________________________
 
-**3. Highscore & Leaderboard**
-
 ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/PH_HS.gif)
+
+**3. Highscore & Leaderboard**
 
 Another system I wanted to implement was a leaderboard. I decided to only make it local, since this game was more about making it for myself and a fun thing to show friends and family (and, of course, you). 
 If the player reaches a score higher than the last 8, they will be prompted to add their name in the textbox upon the frogs final death. The highscore is saved on the local device, and the leaderboard will update and available in the main menu of the game.
 
 _____________________________________________________________________________________
 
-**4. Audio Adjustments**
-
 ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/Sliders.gif)
+
+**4. Audio Adjustments**
 
 I was really proud of this nifty little menu feature. I spent a lot of time finding the right music/SFX for this game, and I really wanted to create a system to manage sound so every player could tailor audio based on their own preferences. 
 
@@ -86,8 +86,6 @@ which is an AI-generated image (Adobe Firefly) that I repainted and cut into thr
 | Platforms | 
 | ------------- |
 | ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/PH_Log_Stone.png) |
-
-
 
 _____________________________________________________________________________________
 ## Code blocks, *for the curious*
