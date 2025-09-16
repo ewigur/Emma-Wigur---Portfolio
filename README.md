@@ -7,8 +7,19 @@
 [LinkedIn](https://www.linkedin.com/in/emma-wigur-103711219/)
  
 ## Collaborative projects
+<details>
+<summary>Disclaimer</summary>
+ 
+All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
+_Their names are listed on the Itch.io pages provided in each presentation of the projects._
 
-### [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md) ← Click for more
+</details>
+
+### [***Train Tale***](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md) ← Click for more
+
+<details>
+  <summary>Quick Details</summary>
+ 
  - Comprehensive Gameplay Programming
  - Sound Design/SFX
  - Animation Implementation\
@@ -18,12 +29,19 @@ ________________________\
 Team: 3 Programmers and 4 Artists\
 Team name: *Carneval*\
 Engine: Unity\
-Genre: Walking Simulator, Story, Suspense\
+Genre: Walking Simulator, Story, Suspense
+
+</details>
+
 \
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/6da9ffc9-b982-4ffa-be03-1cc46e4982a5" />
 ___________________________________________
 
-### [Pogo Pirates](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md) ← Click for more
+### [***Pogo Pirates***](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md) ← Click for more
+
+<details>
+  <summary>Quick Details</summary>
+ 
 - Camera System
 - UI Implementation/Animation\
 ________________________\
@@ -31,26 +49,32 @@ ________________________\
 
 Team: 4 Programmers and 3 Artists\
 Engine: Unity\
-Genre: Platformer, Action, Local Co-op\
+Genre: Platformer, Action, Local Co-op
+
+</details>
+
 \
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/57fd2998-7ce7-4496-b774-4940a2e5e7a1" />
 
 ___________________________________________________________________
-### Disclaimer:
-All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
-_Their names are listed on the Itch.io pages provided in each presentation of the projects._
-___________________________________________________________________
 
 ## Projects by me
 
-### [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) ← Click for more
+### [***Pond Hopper***](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) ← Click for more
+
+<details>
+  <summary>Quick Details</summary>
+
 - Game Development for Android
 - Programming Patterns
 - 2D art and Animation\
 ________________________\
 *Developed: January 2025 - February 2025*
 
-Engine: Unity\
+Engine: Unity
+
+</details>
+
 \
 <img width="315" height="250" alt="image" src="https://github.com/ewigur/Portfolio/blob/main/ThumbNails/PH.png" />
 
