@@ -2,15 +2,13 @@
 
 # Portfolio | Emma Wigur
 **Links**\
-[Itch.io](https://ewigur.itch.io/)
-
-[CV]()
-
-
+[CV](https://github.com/ewigur/Emma-Wigur---Portfolio/blob/main/CV/CV_EmmaWigur.pdf) |
+[Itch.io](https://ewigur.itch.io/) |
+[LinkedIn](https://www.linkedin.com/in/emma-wigur-103711219/)
+ 
 ## Collaborative projects
-*Read more about my contributions on each individual project by clicking their respective names below*
 
-### [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md)
+### [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md) ← Click for more
  - Comprehensive Gameplay Programming
  - Sound Design/SFX
  - Animation Implementation\
@@ -25,7 +23,7 @@ Genre: Walking Simulator, Story, Suspense\
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/6da9ffc9-b982-4ffa-be03-1cc46e4982a5" />
 ___________________________________________
 
-### [Pogo Pirates](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md)
+### [Pogo Pirates](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md) ← Click for more
 - Camera System
 - UI Implementation/Animation\
 ________________________\
@@ -44,9 +42,8 @@ _Their names are listed on the Itch.io pages provided in each presentation of th
 ___________________________________________________________________
 
 ## Projects by me
-*Click on project name to read more*
 
-### [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) 
+### [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) ← Click for more
 - Game Development for Android
 - Programming Patterns
 - 2D art and Animation\
