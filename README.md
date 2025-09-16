@@ -1,6 +1,6 @@
 <a name="TOP"></a>
 
-# A Collection of projects I've had the privilege to work on
+# A Collection of projects I've worked on
 *Read more about my contributions on each individual project by clicking their respective names below*
 
 ### Disclaimer:
