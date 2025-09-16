@@ -17,7 +17,7 @@ Pogo Pirates is all about being the King of the hill. Eliminate your friends (or
 _____________________________________________________________________________________
 *This project was the starting point of getting comfortable with building games, as well as working in a*\
 *team. The latter wasn't hard, since every single one in the team really kept on encouraging and supporting eachother,*\
-*which also made the first point not as intimidating as time went along.*\
+*which also made the first point not as intimidating.*\
  \
 *This was the first game I had ever been working on, and I couldn't be more proud of how it turned out*
 
