@@ -1,6 +1,11 @@
 <a name="TOP"></a>
 
-# A Collection of projects I've worked on
+# Portfolio | Emma Wigur
+**Links**\
+[Itch.io](https://ewigur.itch.io/)
+
+
+## Collaborative projects
 *Read more about my contributions on each individual project by clicking their respective names below*
 
 ## [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md)
@@ -36,9 +41,10 @@ All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at
 _Their names are listed on the Itch.io pages provided in each presentation of the projects._
 ___________________________________________________________________
 
-# Projects by me
+## Projects by me
+*Click on project name to read more*
 
-## [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md)
+## [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) 
 - Game Development for Android
 - Programming Patterns
 - 2D art and Animation\
