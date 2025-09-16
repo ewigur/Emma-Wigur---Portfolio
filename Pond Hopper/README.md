@@ -57,15 +57,7 @@ ________________________________________________________________________________
 **3. Highscore & Leaderboard**
 
 Another system I wanted to implement was a leaderboard. I decided to only make it local, since this game was more about making it for myself and a fun thing to show friends and family (and, of course, you). 
-If the player reaches a score higher than the last 8, they will be prompted to add their name in the textbox upon the frogs final death. The highscore is saved on the local device, and the leaderboard will update and available in the main menu of the game.
-
-_____________________________________________________________________________________
-
-![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/Sliders.gif)
-
-**4. Audio Adjustments**
-
-I was really proud of this nifty little menu feature. I spent a lot of time finding the right music/SFX for this game, and I really wanted to create a system to manage sound so every player could tailor audio based on their own preferences. 
+If the player reaches a score higher than the last 8, they will be prompted to add their name in the textbox upon the frogs final death. The highscore is saved on the local device, and the leaderboard will be updated and available in the main menu of the game.
 
 _____________________________________________________________________________________
 
