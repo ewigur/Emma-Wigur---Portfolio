@@ -8,7 +8,7 @@
 ## Collaborative projects
 *Read more about my contributions on each individual project by clicking their respective names below*
 
-## [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md)
+### [Train Tale](https://github.com/ewigur/Portfolio/blob/main/Train%20Tale/README.md)
  - Comprehensive Gameplay Programming
  - Sound Design/SFX
  - Animation Implementation\
@@ -23,7 +23,7 @@ Genre: Walking Simulator, Story, Suspense\
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/6da9ffc9-b982-4ffa-be03-1cc46e4982a5" />
 ___________________________________________
 
-## [Pogo Pirates](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md)
+### [Pogo Pirates](https://github.com/ewigur/Portfolio/blob/main/Pogo%20Pirates/README.md)
 - Camera System
 - UI Implementation/Animation\
 ________________________\
@@ -34,8 +34,8 @@ Engine: Unity\
 Genre: Platformer, Action, Local Co-op\
 \
 <img width="315" height="250" alt="image" src="https://github.com/user-attachments/assets/57fd2998-7ce7-4496-b774-4940a2e5e7a1" />
-________________________________________
 
+___________________________________________________________________
 ### Disclaimer:
 All art presented in *"Train Tale"* and *"Pogo Pirates"* are made by students at Yrgo Game Creator Artist.\
 _Their names are listed on the Itch.io pages provided in each presentation of the projects._
@@ -44,7 +44,7 @@ ___________________________________________________________________
 ## Projects by me
 *Click on project name to read more*
 
-## [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) 
+### [Pond Hopper](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) 
 - Game Development for Android
 - Programming Patterns
 - 2D art and Animation\
