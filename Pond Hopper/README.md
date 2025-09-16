@@ -233,7 +233,7 @@ ________________________
 
 /*
     NOTE: ...and a bunch of happens in correlation with the state change.
-             (UI managingin, this case.)
+             (UI managing, this case.)
 */
 
 (from "InGameStatesHandler")
