@@ -38,50 +38,6 @@ I decided on having one common fly, and one firefly that would be more rare but 
 caught the eye of the people testing the game,and it became more interesting gameplay as the subjects were more likely to chase the shiny fly instead of
 diving into the cloud of common flies that might even give them a higher score.
 
-*[Code can be found further down the page]*
-_____________________________________________________________________________________
-
-![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/PH_ObjectPool.gif)
-
-**2. Object Pool**
-
-Since were already on the topic of the flies - they also have their very own object pool. Since the gameloop goes on and on, 
-it would be irresposible of me not to implement a _circle of life_ kind of functionality. The flies spawn from a pool of preloaded
-prefabs, and when the player collects them they return to the pool to be released again. 
-
-*[Code can be found further down the page]*
-_____________________________________________________________________________________
-
-![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/PH_HS.gif)
-
-**3. Highscore & Leaderboard**
-
-Another system I wanted to implement was a leaderboard. I decided to only make it local, since this game was more about making it for myself and a fun thing to show friends and family (and, of course, you). 
-If the player reaches a score higher than the last 8, they will be prompted to add their name in the textbox upon the frogs final death. The highscore is saved on the local device, and the leaderboard will be updated and available in the main menu of the game.
-
-_____________________________________________________________________________________
-
-## Graphics
-
-All graphics are created by me.\
-The only exception is the level background,\
-which is an AI-generated image (Adobe Firefly) that I repainted and cut into three different pieces to layer the game scene.
-
-| Fly  | Firefly |
-| ------------- | ------------- |
-| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/Fly.gif)  | ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/FireFly.gif) |
-
-| Level  | Frog |
-| ------------- | ------------- |
-| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/Level.gif)  |  ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/PH_Frog.gif) |
-
-| Platforms | 
-| ------------- |
-| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/PH_Log_Stone.png) |
-
-_____________________________________________________________________________________
-## Code blocks, *for the curious*
-
 <details>
 <summary>PickUpItem.cs - Scriptable Object</summary>
 <br>
@@ -107,8 +63,78 @@ public class PickUpItem : ScriptableObject
 }
 
 ```
+</details>
+
+<details>
+<summary>State Machine</summary>
+<br>
+  
+```ruby
+/*
+  NOTE: This is a snippet of what happens under the hood as the game changes states.
+        I created enums for each state
+*/
+      public enum GameStates
+    {
+        MainMenu,
+        GameLoop,
+        GamePaused,
+        GameResumed,
+        GameRestarted,
+        GameOver,
+    }
+
+________________________
+
+*/
+    NOTE: As soon as the game state changes, the corresponding components listens to that.
+          Below is a snippet from under the hood upon player death...
+*/
+
+    private void HandleStates(GameStates newState)
+    {
+        switch (newState)
+        {
+            
+            case GameStates.GameOver:
+                onToggleInput?.Invoke(false);
+                TriggerPauseMusic?.Invoke();
+                Time.timeScale = 0f;
+                break;
+        }
+    }
+
+________________________
+
+/*
+    NOTE: ...and a bunch of happens in correlation with the state change.
+             (UI managing, this case.)
+*/
+
+(from "InGameStatesHandler")
+
+{
+    private void GameOver()
+    {
+        GMInstance.ChangeState(GameStates.GameOver);
+        livesDisplay.SetActive(false);
+        pauseButton.SetActive(false);
+        gameOverMenu.SetActive(true);
+    }
+}
+
+```
 
 </details>
+_____________________________________________________________________________________
+
+![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/PH_ObjectPool.gif)
+
+**2. Object Pool**
+
+Since were already on the topic of the flies - they also have their very own object pool. Since the gameloop goes on and on, 
+it would be irresposible of me not to implement a _circle of life_ kind of functionality. The flies spawn from a pool of preloaded
+prefabs, and when the player collects them they return to the pool to be released again. 
 
 <details>
 <summary>PickUpPool.cs - Object Pool</summary>
@@ -190,67 +216,35 @@ ________________________
 
 </details>
 
-<details>
-<summary>State Machine</summary>
-<br>
-  
-```ruby
-/*
-  NOTE: This is a snippet of what happens under the hood as the game changes states.
-        I created enums for each state
-*/
-      public enum GameStates
-    {
-        MainMenu,
-        GameLoop,
-        GamePaused,
-        GameResumed,
-        GameRestarted,
-        GameOver,
-    }
+_____________________________________________________________________________________
 
-________________________
+![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/GIFs/PH_HS.gif)
 
-*/
-    NOTE: As soon as the game state changes, the corresponding components listens to that.
-          Below is a snippet from under the hood upon player death...
-*/
+**3. Highscore & Leaderboard**
 
-    private void HandleStates(GameStates newState)
-    {
-        switch (newState)
-        {
-            
-            case GameStates.GameOver:
-                onToggleInput?.Invoke(false);
-                TriggerPauseMusic?.Invoke();
-                Time.timeScale = 0f;
-                break;
-        }
-    }
+Another system I wanted to implement was a leaderboard. I decided to only make it local, since this game was more about making it for myself and a fun thing to show friends and family (and, of course, you). 
+If the player reaches a score higher than the last 8, they will be prompted to add their name in the textbox upon the frogs final death. The highscore is saved on the local device, and the leaderboard will be updated and available in the main menu of the game.
 
-________________________
+_____________________________________________________________________________________
 
-/*
-    NOTE: ...and a bunch of happens in correlation with the state change.
-             (UI managing, this case.)
-*/
+## Graphics
 
-(from "InGameStatesHandler")
+All graphics are created by me.\
+The only exception is the level background,\
+which is an AI-generated image (Adobe Firefly) that I repainted and cut into three different pieces to layer the game scene.
 
-{
-    private void GameOver()
-    {
-        GMInstance.ChangeState(GameStates.GameOver);
-        livesDisplay.SetActive(false);
-        pauseButton.SetActive(false);
-        gameOverMenu.SetActive(true);
-    }
-}
+| Fly  | Firefly |
+| ------------- | ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/Fly.gif)  | ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/FireFly.gif) |
 
-```
+| Level  | Frog |
+| ------------- | ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/Level.gif)  |  ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/PH_Frog.gif) |
 
-</details>
+| Platforms | 
+| ------------- |
+| ![](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/Graphics/PH_Log_Stone.png) |
+
 _____________________________________________________________________________________
 
 ### *Developed by*
