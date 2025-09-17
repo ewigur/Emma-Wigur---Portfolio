@@ -5,6 +5,14 @@
 [CV](https://drive.google.com/file/d/1TDsZZmJ3MFa_2KRa7qVxOIB03esl3rUD/view) |
 [Itch.io](https://ewigur.itch.io/) |
 [LinkedIn](https://www.linkedin.com/in/emma-wigur-103711219/)
+________________________________________________________________________________________________
+#### About the Author
+ Welcome to my collection of projects!\
+ My journey into game development started years ago. I have, like many other aspiring game devs,\
+ been into playing games ever since I got basic motor skills. Somewhere along the way I realized\
+ that somebody has to actually be making the games I enjoy playing - and ever since I have been\
+ dead set on chasing the dream of creating worlds for others to explore.
+________________________________________________________________________________________________
  
 ## Collaborative Projects
 <details>
