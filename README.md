@@ -6,7 +6,7 @@
 [Itch.io](https://ewigur.itch.io/) |
 [LinkedIn](https://www.linkedin.com/in/emma-wigur-103711219/)
  
-## Collaborative projects
+## Collaborative Projects
 <details>
 <summary>Disclaimer</summary>
  
@@ -58,7 +58,7 @@ Genre: Platformer, Action, Local Co-op
 
 ___________________________________________________________________
 
-## Projects by me
+## Solo Projects
 
 ### [***Pond Hopper***](https://github.com/ewigur/Portfolio/blob/main/Pond%20Hopper/README.md) ← Click for more
 
